@@ -14,6 +14,9 @@ This plugin is published under the MIT license, and the license document is incl
 * `exporting.csv.dateFormat`
 Which date format to use for exported dates on a datetime X axis. See [Highcharts.dateFormat](http://api.highcharts.com/highcharts#Highcharts.dateFormat\(\)).
 
+* `exporting.csv.filename`
+The basename of the file to create, defaults to either the chart title in lowercase with spaces replaced by hyphens, or `chart` if there is no title.
+
 * `exporting.csv.itemDelimiter`
 The item delimiter, defaults to `,`. Use `;` for direct import to Excel.
 

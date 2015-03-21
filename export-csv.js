@@ -153,8 +153,8 @@
     function getContent(chart, href, extention, content, MIME) {
         var a,
             blobObject,
-            name = (chart.title ? chart.title.textStr.replace(/ /g, '-').toLowerCase() : 'chart'),
             options = (chart.options.exporting || {}).csv || {},
+            name = options.filename || (chart.title ? chart.title.textStr.replace(/ /g, '-').toLowerCase() : 'chart'),
             url = options.url || 'http://www.highcharts.com/studies/csv-export/download.php';
 
         // Download attribute supported
